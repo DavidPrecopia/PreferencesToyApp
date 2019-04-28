@@ -16,4 +16,16 @@
     <string name="perf_checkbox_title">This enables the things</string>
     <string name="perf_checkbox_summary_off">Enable the thing</string>
     <string name="perf_checkbox_summary_on">Disable the thing</string>
+
+
+    <string name="perf_category_sync_key">perf_category_sync_key</string>
+    <string name="perf_category_sync_title">Network</string>
+
+    <string name="perf_sync_title">Synchronization</string>
+    <string name="perf_sync_id">perf_sync_id</string>
+
+    <string name="perf_sync_checkbox_title">Enable auto sync</string>
+    <string name="perf_sync_checkbox_id">perf_sync_checkbox_id</string>
+    <string name="perf_sync_checkbox_summary_off">Sync is disabled</string>
+    <string name="perf_sync_checkbox_summary_on">Sync is enabled</string>
 </resources>

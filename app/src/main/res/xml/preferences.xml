@@ -6,7 +6,8 @@
     `summaryOff/On` does not show in the app's UI.
     As of 4/27/19.
 -->
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <PreferenceCategory
         android:key="@string/perf_category_switch_key"
@@ -32,6 +33,15 @@
             android:summaryOff="@string/perf_checkbox_summary_off"
             android:summaryOn="@string/perf_checkbox_summary_on"
             android:title="@string/perf_checkbox_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="@string/perf_category_sync_key"
+        android:title="@string/perf_category_sync_title">
+        <Preference
+            android:key="@string/perf_sync_id"
+            android:title="@string/perf_sync_title"
+            app:fragment="com.example.preferencestoyapp.SyncPreferenceFragment" />
     </PreferenceCategory>
 
 </PreferenceScreen>
