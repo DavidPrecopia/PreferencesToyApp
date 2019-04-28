@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="perf_switch_key">perf_checkbox_key</string>
+    <string name="perf_switch_title">This enables and disables things</string>
+    <string name="perf_switch_summary_off">Enable thing</string>
+    <string name="perf_switch_summary_on">Disable thing</string>
+</resources>

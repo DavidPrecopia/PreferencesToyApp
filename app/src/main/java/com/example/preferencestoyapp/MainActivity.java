@@ -1,5 +1,6 @@
 package com.example.preferencestoyapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -29,12 +30,10 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.preferences:
-
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
+        if (item.getItemId() == R.id.menu_item_preferences_id) {
+            startActivity(new Intent(this, PreferenceActivity.class));
+            return true;
         }
+        return super.onOptionsItemSelected(item);
     }
 }
