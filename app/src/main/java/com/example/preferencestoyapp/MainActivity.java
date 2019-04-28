@@ -7,6 +7,7 @@ import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
+import androidx.preference.PreferenceManager;
 
 import com.example.preferencestoyapp.databinding.ActivityMainBinding;
 
@@ -15,8 +16,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
-
         setSupportActionBar(binding.toolbar);
+
+        // This sets default values for your preferences by reading preference XML
+        // file - it use each's `defaultValue` and `key` attributes to do so.
+        PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
+
+        // This only works because this Activity IS NOT `singleTop`, thus it is re-created
+        // every time it is accessed - even when going up/back.
+        boolean switchState = PreferenceManager
+                .getDefaultSharedPreferences(this)
+                .getBoolean(getString(R.string.perf_switch_key), false);
+        binding.textView.setText(String.valueOf(switchState));
     }
 
     /**

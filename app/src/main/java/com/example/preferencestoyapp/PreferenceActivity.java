@@ -18,6 +18,7 @@ public class PreferenceActivity extends AppCompatActivity {
 
         setSupportActionBar(binding.toolbar);
         getSupportActionBar().setTitle(R.string.menu_item_preferences_title);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         // You add the PreferenceFragment the same way you add a normal Fragment.
         getSupportFragmentManager()
