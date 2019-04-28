@@ -8,13 +8,30 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!--switchTextOn/Off does nothing-->
-    <SwitchPreference
-        android:id="@+id/switch_preference"
-        android:defaultValue="true"
-        android:key="@string/perf_switch_key"
-        android:summaryOff="@string/perf_switch_summary_off"
-        android:summaryOn="@string/perf_switch_summary_on"
-        android:title="@string/perf_switch_title" />
+    <PreferenceCategory
+        android:key="@string/perf_category_switch_key"
+        android:title="@string/perf_category_switch_title">
+        <!--switchTextOn/Off does nothing-->
+        <SwitchPreference
+            android:id="@+id/switch_preference"
+            android:defaultValue="true"
+            android:key="@string/perf_switch_key"
+            android:summaryOff="@string/perf_switch_summary_off"
+            android:summaryOn="@string/perf_switch_summary_on"
+            android:title="@string/perf_switch_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="@string/perf_category_checkbox_key"
+        android:title="@string/perf_category_checkbox_title">
+
+        <CheckBoxPreference
+            android:id="@+id/checkbox_preference"
+            android:defaultValue="false"
+            android:key="@string/perf_checkbox_key"
+            android:summaryOff="@string/perf_checkbox_summary_off"
+            android:summaryOn="@string/perf_checkbox_summary_on"
+            android:title="@string/perf_checkbox_title" />
+    </PreferenceCategory>
 
 </PreferenceScreen>

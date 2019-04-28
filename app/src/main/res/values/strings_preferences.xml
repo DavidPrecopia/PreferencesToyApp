@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="perf_category_switch_key">perf_category_switch_key</string>
+    <string name="perf_category_switch_title">Switch Category</string>
+
     <string name="perf_switch_key">perf_checkbox_key</string>
     <string name="perf_switch_title">This enables and disables things</string>
     <string name="perf_switch_summary_off">Enable thing</string>
     <string name="perf_switch_summary_on">Disable thing</string>
+
+
+    <string name="perf_category_checkbox_key">perf_category_checkbox_key</string>
+    <string name="perf_category_checkbox_title">Checkbox Category</string>
+
+    <string name="perf_checkbox_key">perf_checkbox_key</string>
+    <string name="perf_checkbox_title">This enables the things</string>
+    <string name="perf_checkbox_summary_off">Enable the thing</string>
+    <string name="perf_checkbox_summary_on">Disable the thing</string>
 </resources>
