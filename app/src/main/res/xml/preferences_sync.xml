@@ -5,7 +5,7 @@
     <CheckBoxPreference
         android:id="@+id/switch_preference_sync"
         android:defaultValue="true"
-        android:key="@string/perf_sync_checkbox_id"
+        android:key="@string/perf_sync_checkbox_key"
         android:summaryOff="@string/perf_sync_checkbox_summary_off"
         android:summaryOn="@string/perf_sync_checkbox_summary_on"
         android:title="@string/perf_sync_checkbox_title" />

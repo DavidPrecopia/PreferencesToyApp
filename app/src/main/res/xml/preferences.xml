@@ -39,7 +39,7 @@
         android:key="@string/perf_category_sync_key"
         android:title="@string/perf_category_sync_title">
         <Preference
-            android:key="@string/perf_sync_id"
+            android:key="@string/perf_sync_key"
             android:title="@string/perf_sync_title"
             app:fragment="com.example.preferencestoyapp.SyncPreferenceFragment" />
     </PreferenceCategory>

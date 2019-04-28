@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="button_check_sharedprefs">Check SharedPrefs</string>
+
+
     <string name="perf_category_switch_key">perf_category_switch_key</string>
     <string name="perf_category_switch_title">Switch Category</string>
 
@@ -22,10 +25,10 @@
     <string name="perf_category_sync_title">Network</string>
 
     <string name="perf_sync_title">Synchronization</string>
-    <string name="perf_sync_id">perf_sync_id</string>
+    <string name="perf_sync_key">perf_sync_key</string>
 
     <string name="perf_sync_checkbox_title">Enable auto sync</string>
-    <string name="perf_sync_checkbox_id">perf_sync_checkbox_id</string>
+    <string name="perf_sync_checkbox_key">perf_sync_checkbox_key</string>
     <string name="perf_sync_checkbox_summary_off">Sync is disabled</string>
     <string name="perf_sync_checkbox_summary_on">Sync is enabled</string>
 </resources>
