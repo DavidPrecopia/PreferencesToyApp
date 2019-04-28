@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    I am not using AndroidX because it does not work.
+    When using it, I cannot get code completion suggestions and
+    `summaryOff/On` does not show in the app's UI.
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--switchTextOn/Off does nothing-->
+    <SwitchPreference
+        android:id="@+id/switch_preference"
+        android:defaultValue="true"
+        android:key="@string/perf_switch_key"
+        android:summaryOff="@string/perf_switch_summary_off"
+        android:summaryOn="@string/perf_switch_summary_on"
+        android:title="@string/perf_switch_title" />
+
+</PreferenceScreen>
