@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!--
-    I am not using AndroidX because it does not work.
-    When using it, I cannot get code completion suggestions and
-    `summaryOff/On` does not show in the app's UI.
-    As of 4/27/19.
--->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
